@@ -1,0 +1,39 @@
+{
+  "name": "NativescriptNativeClassExtendIssue",
+  "version": "1.0.0",
+  "description": "A repo that reproduce an issue with extending class in nativescript with typescript",
+  "author": "Antony Rizzitelli",
+  "license": "MIT",
+  "scripts": {
+    "run-android": "ns run android --bundle --no-hmr",
+    "vue-devtools": "vue-devtools"
+  },
+  "dependencies": {
+    "@nativescript/core": "7.0.13",
+    "@nativescript/hook": "^2.0.0",
+    "@nativescript/theme": "^3.0.0",
+    "@vue/devtools": "^5.3.3",
+    "nativescript-vue": "^2.6.1",
+    "vue-class-component": "^7.2.5",
+    "vue-property-decorator": "^9.0.0",
+    "vuex": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "@nativescript/android": "7.0.1",
+    "@nativescript/ios": "7.1.0",
+    "@nativescript/types": "7.1.0",
+    "@nativescript/webpack": "3.0.8",
+    "@types/node": "13.13.28",
+    "babel-loader": "8.1.0",
+    "nativescript-vue-template-compiler": "2.8.1",
+    "node-sass": "4.14.1",
+    "pug": "3.0.0",
+    "pug-plain-loader": "1.0.0",
+    "typescript": "3.9.7",
+    "vue": "2.6.12",
+    "vue-loader": "15.9.3"
+  },
+  "main": "main"
+}
