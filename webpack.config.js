@@ -20,7 +20,12 @@ module.exports = env => {
   // Add your custom Activities, Services and other android app components here.
   const appComponents = env.appComponents || [];
   appComponents.push(
-    ...["@nativescript/core/ui/frame", "@nativescript/core/ui/frame/activity"]
+    ...[
+      "@nativescript/core/ui/frame",
+      "@nativescript/core/ui/frame/activity",
+      resolve(__dirname, "app/services/receiver.android.ts"),
+      resolve(__dirname, "app/services/service.android.ts")
+    ]
   );
 
   const platform =
