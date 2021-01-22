@@ -71,6 +71,7 @@ class Service extends android.app.Service {
     flags: number,
     startId: number
   ): number {
+    console.log("here2");
     return android.app.Service.START_REDELIVER_INTENT;
   }
 

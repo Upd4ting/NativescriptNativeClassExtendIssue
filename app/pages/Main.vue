@@ -7,9 +7,18 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { Application } from "@nativescript/core";
 
 @Component
-export default class extends Vue {}
+export default class extends Vue {
+  mounted() {
+    console.log("here");
+    const context = Application.android.context;
+    const serviceIntent = new android.content.Intent();
+    serviceIntent.setClassName(context, "eu.test.mobileapp.Service");
+    context.startService(serviceIntent);
+  }
+}
 </script>
 
 <style scoped lang="scss"></style>
